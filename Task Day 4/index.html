@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>HTML Forms</title>
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom:  2px solid #ccc;
+ }
+ textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+	<h3>Demonstrates creating Radio Button Input Control for Web Page Form</h3>
+	<form name="f1" method="get" action="" >
+		<fieldset>
+		<legend>Personal Information</legend>
+		Name: <input type="text" name="sname" required/> <br/><br/>
+		Password: <input type="password" name="pwd" required/> <br/><br/>
+		Gender:
+		<input type="radio" name="gen" value="M"/>Male
+		<input type="radio" name="gen" value="F"/>Female
+		</fieldset>
+		<br/><br/>
+		<fieldset>
+		<legend>Economic Information</legend>
+		<h4>Which country have you been to?</h4>
+		<select name="country">
+		<option value="IN" selected="selected">India</option>
+		<option value="US">United States of America</option>
+		<option value="GR">Germany</option>
+		<option value="UK">United Kingdom</option>
+		</select>
+		<h4>Book your Reservation</h4>
+		<select name="reservation">
+		<optgroup label="Morning">
+		<option value="09:00">Breakfast 09:00 AM</option>
+		<option value="10:00">Breakfast 10:00 AM</option>
+		</optgroup>
+		<optgroup label="Afternoon">
+		<option value="13:00">Lunch 01:00 PM</option>
+		<option value="14:00">Lunch 02:00 PM</option>
+		</optgroup>
+		</select>
+	</fieldset>
+		<br/><br/>
+		<fieldset>
+		<legend>Residential Information</legend>
+		Address: <br/>
+<textarea name="addr" cols="100" rows="6" required></textarea>
+<br/><br/>
+</fieldset>
+<br/><br/>
+<input type="submit" name="bt1" value="Register" />
+<br/><br/>
+<input type="reset" name="bt1" value="Clear" />
+<br/><br/>
+<input type="button" name="bt3" value="Forgot Password" />
+	</form>
+</body>
+</html>
